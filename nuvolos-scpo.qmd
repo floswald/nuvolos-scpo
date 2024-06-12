@@ -4,7 +4,7 @@ format:
     revealjs:
         theme: _extensions/grantmcdermott/clean/clean.scss
         logo: img/ScPo-logo.png
-        footer: "[Nuvolos Intro](https://floswald.github.io/nuvolos-scpoecon/)"
+        footer: "[Nuvolos Intro](https://floswald.github.io/nuvolos-scpo/)"
         incremental: false
         code-line-numbers: false
         highlight-style: github
