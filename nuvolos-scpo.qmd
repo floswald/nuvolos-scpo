@@ -1,0 +1,85 @@
+---
+title: "Intro to Nuvolos at ScPoEcon"
+format: 
+    revealjs:
+        theme: _extensions/grantmcdermott/clean/clean.scss
+        logo: img/ScPo-logo.png
+        footer: "[Nuvolos Intro](https://floswald.github.io/nuvolos-scpoecon/)"
+        incremental: false
+        code-line-numbers: false
+        highlight-style: github
+        slide-number: false
+        html-math-method: mathjax
+author: 
+  - name: Florian Oswald
+    orcid: 0000-0001-7737-2038
+    email: florian.oswald@sciencespo.fr
+    affiliations: SciencesPo Paris, RES Data Editor
+subtitle: "Why Nuvolos makes Sense for an Econ Department"
+date: today
+date-format: "D MMMM, YYYY"
+
+---
+
+
+## What is the Issue?
+
+::: {.incremental}
+
+1. Modern (Economic) Research requires powerful computational infrastructure.
+2. Many Machine Learning applications require access to GPU compute.
+3. Large memory applications: Models with a large state space.
+4. Bootstrapping of statistical models.
+5. The requirement for powerful compute is no longer the domain of a few obscure macro economists (😈) who run their `fortran` via `MPI` on the HPC (High Performance Computing) cluster of their university. (Also: access to HPC clusters is still a topic for job market candidates each year.)
+
+:::
+
+## The HPC Cluster?
+
+* The traditional solution would have been to invest and maintain a dedicated HPC cluster.
+* Costly. Not long-lived (need to upgrade frequently).
+* Not overly user-friendly.
+* HPC cluster might make sense for large Universities with dedicated staff (and CS research departments...)
+* The world has moved on: hyper scalers like [AWS](https://aws.amazon.com), [Azure](https://azure.microsoft.com/en-us) etc provide _elastic compute_ services on demand, and at relatively low cost.
+
+## So: Why not AWS or Azure then?
+
+::: {.incremental}
+
+1. Cheapest available compute.
+2. For a small org like an Econ Department (or a single researcher) the setup costs are prohibitive.
+3. Not user friendly. [Demo here (probably outdated)](https://floswald.github.io/html/cluster.html)
+
+::: 
+
+
+
+# Nuvolos {background-color="#40666e"}
+
+## Nuvolos: [https://nuvolos.cloud](https://nuvolos.cloud)
+
+::: {.incremental}
+
+* Sits on top of Azure infrastructre: access to virtually unlimited computing power.
+* Offers 24/7 access to computing instances. Their business model is to figure out competitive pricing for provisioning those machines...
+* ... and to provide world-class support. 
+* Much more user-friendly than hyper scalers.
+* Built for small research teams and teaching which requires compute.
+
+:::
+
+## Nuvolos
+
+### Demo
+
+1. Tour of platform, file browser, applications, access, instances
+2. Demonstration of scaling an application via GPU speedup (Python application)
+3. Demonstration of scaling an application via multithreading [julia application](https://github.com/floswald/2021-03-17-parallelization-tutorial)
+
+
+
+# End 👋 
+
+
+
+

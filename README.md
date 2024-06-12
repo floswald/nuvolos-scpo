@@ -1,4 +1,3 @@
-# ScPo PhD Breakfast
+# ScPo nuvolos intro
 
-* 2024 edition
-* uses https://github.com/grantmcdermott/quarto-revealjs-clean# nuvolos-scpo
+* uses https://github.com/grantmcdermott/quarto-revealjs-clean
