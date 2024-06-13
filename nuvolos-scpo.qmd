@@ -4,14 +4,14 @@ format:
     revealjs:
         theme: _extensions/grantmcdermott/clean/clean.scss
         logo: img/ScPo-logo.png
-        footer: "[Nuvolos Intro](https://floswald.github.io/nuvolos-scpo/)"
+        footer: "[Nuvolos Intro](https://floswald.github.io/nuvolos-scpo/) by [Florian Oswald](https://floswald.github.io)"
         incremental: false
         code-line-numbers: false
         highlight-style: github
         slide-number: false
         html-math-method: mathjax
 author: 
-  - name: Florian Oswald
+  - name: "[Florian Oswald](https://floswald.github.io)"
     orcid: 0000-0001-7737-2038
     email: florian.oswald@sciencespo.fr
     affiliations: SciencesPo Paris, RES Data Editor

@@ -43,6 +43,14 @@ $selection-bg: #26351c !default;
 
 /*-- scss:rules --*/
 
+.reveal code {
+	font-size: 80%;
+	background-color: #afb8c133;
+	color: #c70101;
+	padding: 4px;
+	border-radius: 6px;
+}
+
 .reveal a {
   line-height: 1.5em;
 }
