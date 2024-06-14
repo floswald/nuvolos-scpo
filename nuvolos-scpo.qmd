@@ -31,6 +31,7 @@ date-format: "D MMMM, YYYY"
 3. Large memory applications: Models with a large state space.
 4. Bootstrapping of statistical models.
 5. The requirement for powerful compute is no longer the domain of a few obscure macro economists (😈) who run their `fortran` via `MPI` on the HPC (High Performance Computing) cluster of their university. (Also: access to HPC clusters is still a topic for job market candidates each year.)
+6. 👉 Powerful compute requirements are becoming **normal**.
 
 :::
 
@@ -40,7 +41,21 @@ date-format: "D MMMM, YYYY"
 * Costly. Not long-lived (need to upgrade frequently).
 * Not overly user-friendly.
 * HPC cluster might make sense for large Universities with dedicated staff (and CS research departments...)
+
+::: {.fragment}
+
+::: {.callout-important}
+
+# Low and Behold
+
+SciencesPo does *not* have any high performance computing infrastructure for that reason.
+:::
+:::
+
+::: {.fragment}
 * The world has moved on: hyper scalers like [AWS](https://aws.amazon.com), [Azure](https://azure.microsoft.com/en-us) etc provide _elastic compute_ services on demand, and at relatively low cost.
+
+:::
 
 ## So: Why not AWS or Azure then?
 
@@ -48,7 +63,7 @@ date-format: "D MMMM, YYYY"
 
 1. Cheapest available compute.
 2. For a small org like an Econ Department (or a single researcher) the setup costs are prohibitive.
-3. Not user friendly. [Demo here (probably outdated)](https://floswald.github.io/html/cluster.html)
+3. Not user friendly. [Demo here (probably outdated)](https://floswald.github.io/html/cluster.html).
 
 ::: 
 
@@ -60,11 +75,38 @@ date-format: "D MMMM, YYYY"
 
 ::: {.incremental}
 
-* Sits on top of Azure infrastructre: access to virtually unlimited computing power.
+* Sits on top of Azure infrastructure: access to virtually unlimited computing power.
 * Offers 24/7 access to computing instances. Their business model is to figure out competitive pricing for provisioning those machines...
 * ... and to provide world-class support. 
 * Much more user-friendly than hyper scalers.
 * Built for small research teams and teaching which requires compute.
+
+:::
+
+## Nuvolos
+
+### Applications
+
+::: {.incremental}
+* You can run *any* application on nuvolos. Behaves like a standard Linux machine.
+* (You can *not* run applications which run on windows only for the the same reason. 🤷🏻‍♂️)
+* For licensed products you need to bring your license; either as a file or as a network license.
+* `STATA`, `matlab`, `gurobi`, `INTEL MKL`, `knitro`, `mathematica` etc
+* _Of course_ all open source software is available.
+* Support on the platform is **5 stars**. 🥇
+
+:::
+
+
+## Nuvolos
+
+### Who Could Use This?
+
+::: {.incremental}
+
+1. Small Research Teams: Your RA works on the same machine as you.
+2. Individual Researcher: Running a 48h job on nuvolos is more (energy) efficient than running it on your office computer.
+3. Teaching classes with significant compute setup costs or high demands (like machine learning etc)
 
 :::
 
