@@ -343,7 +343,7 @@
     </div>
 </div>
 
-  <p class="date">13 June, 2024</p>
+  <p class="date">14 June, 2024</p>
 </section>
 <section id="what-is-the-issue" class="slide level2">
 <h2>What is the Issue?</h2>
@@ -354,6 +354,7 @@
 <li class="fragment">Large memory applications: Models with a large state space.</li>
 <li class="fragment">Bootstrapping of statistical models.</li>
 <li class="fragment">The requirement for powerful compute is no longer the domain of a few obscure macro economists (😈) who run their <code>fortran</code> via <code>MPI</code> on the HPC (High Performance Computing) cluster of their university. (Also: access to HPC clusters is still a topic for job market candidates each year.)</li>
+<li class="fragment">👉 Powerful compute requirements are becoming <strong>normal</strong>.</li>
 </ol>
 </div>
 </section>
@@ -364,8 +365,27 @@
 <li>Costly. Not long-lived (need to upgrade frequently).</li>
 <li>Not overly user-friendly.</li>
 <li>HPC cluster might make sense for large Universities with dedicated staff (and CS research departments…)</li>
+</ul>
+<div class="fragment">
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Low and Behold</strong></p>
+</div>
+<div class="callout-content">
+<p>SciencesPo does <em>not</em> have any high performance computing infrastructure for that reason.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<ul>
 <li>The world has moved on: hyper scalers like <a href="https://aws.amazon.com">AWS</a>, <a href="https://azure.microsoft.com/en-us">Azure</a> etc provide <em>elastic compute</em> services on demand, and at relatively low cost.</li>
 </ul>
+</div>
 </section>
 <section id="so-why-not-aws-or-azure-then" class="slide level2">
 <h2>So: Why not AWS or Azure then?</h2>
@@ -373,7 +393,7 @@
 <ol type="1">
 <li class="fragment">Cheapest available compute.</li>
 <li class="fragment">For a small org like an Econ Department (or a single researcher) the setup costs are prohibitive.</li>
-<li class="fragment">Not user friendly. <a href="https://floswald.github.io/html/cluster.html">Demo here (probably outdated)</a></li>
+<li class="fragment">Not user friendly. <a href="https://floswald.github.io/html/cluster.html">Demo here (probably outdated)</a>.</li>
 </ol>
 </div>
 </section>
@@ -386,7 +406,7 @@
 <h2>Nuvolos: <a href="https://nuvolos.cloud">https://nuvolos.cloud</a></h2>
 <div>
 <ul>
-<li class="fragment">Sits on top of Azure infrastructre: access to virtually unlimited computing power.</li>
+<li class="fragment">Sits on top of Azure infrastructure: access to virtually unlimited computing power.</li>
 <li class="fragment">Offers 24/7 access to computing instances. Their business model is to figure out competitive pricing for provisioning those machines…</li>
 <li class="fragment">… and to provide world-class support.</li>
 <li class="fragment">Much more user-friendly than hyper scalers.</li>
@@ -395,6 +415,31 @@
 </div>
 </section>
 <section id="nuvolos-1" class="slide level2">
+<h2>Nuvolos</h2>
+<h3 id="applications">Applications</h3>
+<div>
+<ul>
+<li class="fragment">You can run <em>any</em> application on nuvolos. Behaves like a standard Linux machine.</li>
+<li class="fragment">(You can <em>not</em> run applications which run on windows only for the the same reason. 🤷🏻‍♂️)</li>
+<li class="fragment">For licensed products you need to bring your license; either as a file or as a network license.</li>
+<li class="fragment"><code>STATA</code>, <code>matlab</code>, <code>gurobi</code>, <code>INTEL MKL</code>, <code>knitro</code>, <code>mathematica</code> etc</li>
+<li class="fragment"><em>Of course</em> all open source software is available.</li>
+<li class="fragment">Support on the platform is <strong>5 stars</strong>. 🥇</li>
+</ul>
+</div>
+</section>
+<section id="nuvolos-2" class="slide level2">
+<h2>Nuvolos</h2>
+<h3 id="who-could-use-this">Who Could Use This?</h3>
+<div>
+<ol type="1">
+<li class="fragment">Small Research Teams: Your RA works on the same machine as you.</li>
+<li class="fragment">Individual Researcher: Running a 48h job on nuvolos is more (energy) efficient than running it on your office computer.</li>
+<li class="fragment">Teaching classes with significant compute setup costs or high demands (like machine learning etc)</li>
+</ol>
+</div>
+</section>
+<section id="nuvolos-3" class="slide level2">
 <h2>Nuvolos</h2>
 <h3 id="demo">Demo</h3>
 <ol type="1">
